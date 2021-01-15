@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 $xml = simplexml_load_file('source.xml');
 
 $menu = [
@@ -9,10 +11,9 @@ $menu = [
     $xml->page[3]->menu
 ];
 
-
 $recupGet = $_GET['action'];
-
 $test = intval($recupGet);
+
 
 $title =  $xml->page[$test]->title;
 $content = $xml->page[$test]->content;

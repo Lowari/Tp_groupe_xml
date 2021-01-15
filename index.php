@@ -34,7 +34,7 @@ require_once('controller_index.php');
 
     <div class="container">
 
-        <h1 class="text-center mt-4"><?= $title ?></h1>
+        <h1 class="text-center mt-4"><?= isset($title) ? $title : "" ?></h1>
         <?= $content ?>
 
     </div>
