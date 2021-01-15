@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteRule ^acceuil.html$ index.php?action=0
+RewriteRule ^qui-sommes-nous.html$ index.php?action=1
+RewriteRule ^nos-clients-témoignent.html$ index.php?action=2
+RewriteRule ^contact.html$ index.php?action=3

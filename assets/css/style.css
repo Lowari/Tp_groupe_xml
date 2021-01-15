@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.gallery_box_single{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caption-text {
+    text-align: center;
+}
