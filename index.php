@@ -15,27 +15,30 @@ require_once('controller_index.php');
 </head>
 
 <body>
+    <div class="bg">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark d-flex">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active text-white" aria-current="page" href="acceuil.html"><?= $xml->page[0]->menu ?></a>
-                    <a class="nav-link text-white" aria-current="page" href="qui-sommes-nous.html"><?= $xml->page[1]->menu ?></a>
-                    <a class="nav-link text-white" aria-current="page" href="nos-clients-témoignent.html"><?= $xml ->page[2] ->menu ?></a>
-                    <a class="nav-link text-white" aria-current="page" href="contact.html"><?= $xml ->page[3] ->menu ?></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark d-flex">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-white" aria-current="page" href="acceuil.html"><?= $xml->page[0]->menu ?></a>
+                        <a class="nav-link text-white" aria-current="page" href="qui-sommes-nous.html"><?= $xml->page[1]->menu ?></a>
+                        <a class="nav-link text-white" aria-current="page" href="nos-clients-témoignent.html"><?= $xml->page[2]->menu ?></a>
+                        <a class="nav-link text-white" aria-current="page" href="contact.html"><?= $xml->page[3]->menu ?></a>
+                    </div>
                 </div>
             </div>
+        </nav>
+
+        <div class="container">
+
+            <h1 class="text-center mt-4"><?= isset($title) ? $title : "" ?></h1>
+            <?= $content ?>
+
         </div>
-    </nav>
-
-    <div class="container">
-
-        <h1 class="text-center mt-4"><?= isset($title) ? $title : "" ?></h1>
-        <?= $content ?>
 
     </div>
 
